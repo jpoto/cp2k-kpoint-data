@@ -1,0 +1,945 @@
+{
+  "_comment": "Structures from the pinned regtest_*.inp inputs (Materials Project), expressed as canonical ABC/ALPHA_BETA_GAMMA lattice parameters so CP2K enables full point-group k-point symmetry. Coordinates are fractional (SCALED T). Expected IBZ counts come from expected_ibz_counts.json.",
+  "meshes": [
+    {
+      "name": "4x4x4-shifted",
+      "scheme": "MACDONALD 4 4 4 0.5 0.5 0.5",
+      "gamma_centered": false,
+      "key": "4x4x4_shifted"
+    },
+    {
+      "name": "4x4x4-gamma",
+      "scheme": "MACDONALD 4 4 4 0.5 0.5 0.5",
+      "gamma_centered": true,
+      "key": "4x4x4_gamma"
+    },
+    {
+      "name": "6x6x6-shifted",
+      "scheme": "MACDONALD 6 6 6 0.5 0.5 0.5",
+      "gamma_centered": false,
+      "key": "6x6x6_shifted"
+    },
+    {
+      "name": "6x6x6-gamma",
+      "scheme": "MACDONALD 6 6 6 0.5 0.5 0.5",
+      "gamma_centered": true,
+      "key": "6x6x6_gamma"
+    }
+  ],
+  "systems": [
+    {
+      "label": "Al_fcc",
+      "note": "FCC Al,   cubic  Fm-3m     #225",
+      "lattice": {
+        "a": 2.8559542459167657,
+        "b": 2.855954291634759,
+        "c": 2.855955,
+        "alpha": 60.0000033779252,
+        "beta": 60.00000284838631,
+        "gamma": 60.000002428463056
+      },
+      "coords": [
+        [
+          "Al",
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "kinds": [
+        {
+          "name": "Al",
+          "basis_set": "DZVP-MOLOPT-SR-GTH",
+          "potential": "GTH-PBE-q3"
+        }
+      ],
+      "scf": {
+        "eps_scf": 1e-09,
+        "max_scf": 200,
+        "added_mos": 10,
+        "smearing": {
+          "method": "FERMI_DIRAC",
+          "temperature_k": 300
+        }
+      },
+      "reference_4x4x4_shifted": {
+        "energy_hartree": -2.069577641144676,
+        "status": "converged"
+      },
+      "expected_ibz": {
+        "4x4x4_shifted": 10,
+        "4x4x4_gamma": 8,
+        "6x6x6_shifted": 28,
+        "6x6x6_gamma": 16
+      },
+      "space_group": 225,
+      "space_group_symbol": "Fm-3m",
+      "formula": "Al",
+      "nsites": 1,
+      "mp_id": "mp-134",
+      "crystal_system": "cubic"
+    },
+    {
+      "label": "W_bcc",
+      "note": "BCC W,    cubic  Im-3m     #229",
+      "lattice": {
+        "a": 2.745573721758673,
+        "b": 2.7455738069778226,
+        "c": 2.74557459,
+        "alpha": 109.47124142241367,
+        "beta": 109.47124187044405,
+        "gamma": 109.47119866543231
+      },
+      "coords": [
+        [
+          "W",
+          0.0,
+          0.0,
+          0.0
+        ]
+      ],
+      "kinds": [
+        {
+          "name": "W",
+          "basis_set": "DZVP-MOLOPT-SR-GTH",
+          "potential": "GTH-PBE-q14"
+        }
+      ],
+      "scf": {
+        "eps_scf": 1e-09,
+        "max_scf": 200,
+        "added_mos": 10,
+        "smearing": {
+          "method": "FERMI_DIRAC",
+          "temperature_k": 300
+        }
+      },
+      "reference_4x4x4_shifted": {
+        "energy_hartree": -68.25653529556187,
+        "status": "converged"
+      },
+      "expected_ibz": {
+        "4x4x4_shifted": 6,
+        "4x4x4_gamma": 8,
+        "6x6x6_shifted": 14,
+        "6x6x6_gamma": 16
+      },
+      "space_group": 229,
+      "space_group_symbol": "Im-3m",
+      "formula": "W",
+      "nsites": 1,
+      "mp_id": "mp-91",
+      "crystal_system": "cubic"
+    },
+    {
+      "label": "AlAs_zb",
+      "note": "AlAs,     cubic  F-43m     #216",
+      "lattice": {
+        "a": 4.013398250535005,
+        "b": 4.013397970922498,
+        "c": 4.01339746,
+        "alpha": 59.9999959688638,
+        "beta": 59.99999827352137,
+        "gamma": 59.9999965443567
+      },
+      "coords": [
+        [
+          "Al",
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          "As",
+          0.25,
+          0.24999999999999997,
+          0.2499999999999999
+        ]
+      ],
+      "kinds": [
+        {
+          "name": "Al",
+          "basis_set": "DZVP-MOLOPT-SR-GTH",
+          "potential": "GTH-PBE-q3"
+        },
+        {
+          "name": "As",
+          "basis_set": "DZVP-MOLOPT-SR-GTH",
+          "potential": "GTH-PBE-q5"
+        }
+      ],
+      "scf": {
+        "eps_scf": 1e-09,
+        "max_scf": 200,
+        "added_mos": 10
+      },
+      "reference_4x4x4_shifted": {
+        "energy_hartree": -8.418943329414084,
+        "status": "converged"
+      },
+      "expected_ibz": {
+        "4x4x4_shifted": 10,
+        "4x4x4_gamma": 8,
+        "6x6x6_shifted": 28,
+        "6x6x6_gamma": 16
+      },
+      "space_group": 216,
+      "space_group_symbol": "F-43m",
+      "formula": "AlAs",
+      "nsites": 2,
+      "mp_id": "mp-2172",
+      "crystal_system": "cubic"
+    },
+    {
+      "label": "CoF2_rutile",
+      "note": "CoF2,     tetrag P4_2/mnm  #136",
+      "lattice": {
+        "a": 3.19916469,
+        "b": 4.643519410000112,
+        "c": 4.643519410000112,
+        "alpha": 90.00002517129357,
+        "beta": 90.0,
+        "gamma": 90.0
+      },
+      "coords": [
+        [
+          "Co_a",
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          "Co_b",
+          0.49999999999999994,
+          0.5,
+          0.5
+        ],
+        [
+          "F",
+          0.0,
+          0.30433673999081545,
+          0.30433673999081545
+        ],
+        [
+          "F",
+          0.0,
+          0.6956632600091845,
+          0.6956632600091845
+        ],
+        [
+          "F",
+          0.49999999999999994,
+          0.19566325999775994,
+          0.8043367400022401
+        ],
+        [
+          "F",
+          0.49999999999999994,
+          0.8043367400022401,
+          0.19566325999775994
+        ]
+      ],
+      "kinds": [
+        {
+          "name": "Co_a",
+          "element": "Co",
+          "basis_set": "DZVP-MOLOPT-SR-GTH",
+          "potential": "GTH-PBE-q17",
+          "magnetization": 3
+        },
+        {
+          "name": "Co_b",
+          "element": "Co",
+          "basis_set": "DZVP-MOLOPT-SR-GTH",
+          "potential": "GTH-PBE-q17",
+          "magnetization": -3
+        },
+        {
+          "name": "F",
+          "basis_set": "DZVP-MOLOPT-SR-GTH",
+          "potential": "GTH-PBE-q7"
+        }
+      ],
+      "scf": {
+        "eps_scf": 1e-09,
+        "max_scf": 200,
+        "added_mos": 10,
+        "mixing": {
+          "method": "BROYDEN_MIXING",
+          "alpha": 0.15,
+          "nbuffer": 8
+        },
+        "scf_guess": "MOPAC",
+        "smearing": {
+          "method": "FERMI_DIRAC",
+          "temperature_k": 300
+        }
+      },
+      "reference_4x4x4_shifted": {
+        "energy_hartree": -387.94799312411766,
+        "status": "NOT converged, step 200, residual 2.6e-5"
+      },
+      "expected_ibz": {
+        "4x4x4_shifted": 6,
+        "4x4x4_gamma": 18,
+        "6x6x6_shifted": 18,
+        "6x6x6_gamma": 40
+      },
+      "space_group": 136,
+      "space_group_symbol": "P4_2/mnm",
+      "formula": "CoF2",
+      "nsites": 6,
+      "mp_id": "mp-555908",
+      "crystal_system": "tetrag",
+      "expected_ibz_kind_resolved": {
+        "4x4x4_shifted": 12,
+        "4x4x4_gamma": 21,
+        "6x6x6_shifted": 36,
+        "6x6x6_gamma": 52
+      }
+    },
+    {
+      "label": "BaFe2As2",
+      "note": "BaFe2As2, tetrag I4/mmm    #139",
+      "lattice": {
+        "a": 3.936589743481632,
+        "b": 3.9365900290209326,
+        "c": 6.90980064901686,
+        "alpha": 106.550222990024,
+        "beta": 106.55022227000558,
+        "gamma": 90.00000226232314
+      },
+      "coords": [
+        [
+          "Ba",
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          "Fe_a",
+          0.25000000000000006,
+          0.7500000000000001,
+          0.5
+        ],
+        [
+          "Fe_b",
+          0.75,
+          0.25,
+          0.49999999999999994
+        ],
+        [
+          "As",
+          0.3434895800073788,
+          0.34348957998811414,
+          0.6869801499950859
+        ],
+        [
+          "As",
+          0.6565104199926213,
+          0.6565104200118862,
+          0.31301985000491406
+        ]
+      ],
+      "kinds": [
+        {
+          "name": "As",
+          "basis_set": "DZVP-MOLOPT-SR-GTH",
+          "potential": "GTH-PBE-q5"
+        },
+        {
+          "name": "Ba",
+          "basis_set": "DZVP-MOLOPT-SR-GTH",
+          "potential": "GTH-PBE-q10"
+        },
+        {
+          "name": "Fe_a",
+          "element": "Fe",
+          "magnetization": 2,
+          "basis_set": "DZVP-MOLOPT-SR-GTH",
+          "potential": "GTH-PBE-q16"
+        },
+        {
+          "name": "Fe_b",
+          "element": "Fe",
+          "magnetization": -2,
+          "basis_set": "DZVP-MOLOPT-SR-GTH",
+          "potential": "GTH-PBE-q16"
+        }
+      ],
+      "scf": {
+        "eps_scf": 1e-09,
+        "max_scf": 200,
+        "added_mos": 10,
+        "mixing": {
+          "method": "BROYDEN_MIXING",
+          "alpha": 0.15,
+          "nbuffer": 15
+        },
+        "scf_guess": "MOPAC",
+        "smearing": {
+          "method": "FERMI_DIRAC",
+          "temperature_k": 300
+        }
+      },
+      "reference_4x4x4_shifted": {
+        "energy_hartree": -285.3839354989151,
+        "status": "NOT converged, step 200, residual 4.9e-2"
+      },
+      "expected_ibz": {
+        "4x4x4_shifted": 15,
+        "4x4x4_gamma": 13,
+        "6x6x6_shifted": 42,
+        "6x6x6_gamma": 30
+      },
+      "space_group": 139,
+      "space_group_symbol": "I4/mmm",
+      "formula": "Ba(FeAs)2",
+      "nsites": 5,
+      "mp_id": "mp-568961",
+      "crystal_system": "tetrag",
+      "expected_ibz_kind_resolved": {
+        "4x4x4_shifted": 15,
+        "4x4x4_gamma": 13,
+        "6x6x6_shifted": 42,
+        "6x6x6_gamma": 30
+      }
+    },
+    {
+      "label": "BaAg_pnma",
+      "note": "BaAg,     ortho  Pnma      #62",
+      "lattice": {
+        "a": 4.99178311,
+        "b": 6.67116559,
+        "c": 8.75728326,
+        "alpha": 90.0,
+        "beta": 90.0,
+        "gamma": 90.0
+      },
+      "coords": [
+        [
+          "Ba",
+          0.25,
+          0.13011247000091328,
+          0.18113546000566394
+        ],
+        [
+          "Ba",
+          0.75,
+          0.8698875299990867,
+          0.8188645399943362
+        ],
+        [
+          "Ba",
+          0.75,
+          0.6301124700009132,
+          0.3188645399943361
+        ],
+        [
+          "Ba",
+          0.25,
+          0.3698875299990867,
+          0.6811354600056639
+        ],
+        [
+          "Ag",
+          0.25,
+          0.6118394000020617,
+          0.03318150000094893
+        ],
+        [
+          "Ag",
+          0.75,
+          0.3881605999979382,
+          0.9668184999990512
+        ],
+        [
+          "Ag",
+          0.75,
+          0.11183940000206169,
+          0.4668184999990511
+        ],
+        [
+          "Ag",
+          0.25,
+          0.8881605999979382,
+          0.533181500000949
+        ]
+      ],
+      "kinds": [
+        {
+          "name": "Ag",
+          "basis_set": "DZVP-MOLOPT-SR-GTH",
+          "potential": "GTH-PBE-q11"
+        },
+        {
+          "name": "Ba",
+          "basis_set": "DZVP-MOLOPT-SR-GTH",
+          "potential": "GTH-PBE-q10"
+        }
+      ],
+      "scf": {
+        "eps_scf": 1e-09,
+        "max_scf": 200,
+        "added_mos": 10,
+        "mixing": {
+          "method": "BROYDEN_MIXING",
+          "alpha": 0.15,
+          "nbuffer": 8
+        },
+        "smearing": {
+          "method": "FERMI_DIRAC",
+          "temperature_k": 300
+        }
+      },
+      "reference_4x4x4_shifted": {
+        "energy_hartree": -250.09981043410593,
+        "status": "converged, 19 steps"
+      },
+      "expected_ibz": {
+        "4x4x4_shifted": 8,
+        "4x4x4_gamma": 27,
+        "6x6x6_shifted": 27,
+        "6x6x6_gamma": 64
+      },
+      "space_group": 62,
+      "space_group_symbol": "Pnma",
+      "formula": "BaAg",
+      "nsites": 8,
+      "mp_id": "mp-11840",
+      "crystal_system": "ortho"
+    },
+    {
+      "label": "LiMg_imma",
+      "note": "LiMg,     ortho  Imma      #74",
+      "lattice": {
+        "a": 5.695202969098945,
+        "b": 5.695202969098945,
+        "c": 4.899455244413899,
+        "alpha": 64.69179991579799,
+        "beta": 64.69179991579799,
+        "gamma": 34.47540184628994
+      },
+      "coords": [
+        [
+          "Li",
+          0.633299479997338,
+          0.633299479997338,
+          0.6164588099999541
+        ],
+        [
+          "Li",
+          0.3667005200026619,
+          0.3667005200026619,
+          0.3835411900000459
+        ],
+        [
+          "Mg",
+          0.8846043800034082,
+          0.8846043800034082,
+          0.8645454699891033
+        ],
+        [
+          "Mg",
+          0.11539561999659154,
+          0.11539561999659154,
+          0.1354545300108967
+        ]
+      ],
+      "kinds": [
+        {
+          "name": "Li",
+          "basis_set": "DZVP-MOLOPT-SR-GTH",
+          "potential": "GTH-PBE-q3"
+        },
+        {
+          "name": "Mg",
+          "basis_set": "DZVP-MOLOPT-SR-GTH",
+          "potential": "GTH-PBE-q10"
+        }
+      ],
+      "scf": {
+        "eps_scf": 1e-09,
+        "max_scf": 200,
+        "added_mos": 10,
+        "smearing": {
+          "method": "FERMI_DIRAC",
+          "temperature_k": 300
+        }
+      },
+      "reference_4x4x4_shifted": {
+        "energy_hartree": -141.53654175904404,
+        "status": "converged"
+      },
+      "expected_ibz": {
+        "4x4x4_shifted": 20,
+        "4x4x4_gamma": 24,
+        "6x6x6_shifted": 63,
+        "6x6x6_gamma": 68
+      },
+      "space_group": 74,
+      "space_group_symbol": "Imma",
+      "formula": "LiMg",
+      "nsites": 4,
+      "mp_id": "mp-1185380",
+      "crystal_system": "ortho"
+    },
+    {
+      "label": "Cd_hcp",
+      "note": "Cd,       hexag  P6_3/mmc  #194",
+      "lattice": {
+        "a": 2.95847441,
+        "b": 2.9584752304814885,
+        "c": 5.88592793,
+        "alpha": 90.0,
+        "beta": 90.0,
+        "gamma": 120.00001224220426
+      },
+      "coords": [
+        [
+          "Cd",
+          0.33333300000524646,
+          0.6666669999851217,
+          0.25
+        ],
+        [
+          "Cd",
+          0.6666669999947535,
+          0.3333330000148783,
+          0.75
+        ]
+      ],
+      "kinds": [
+        {
+          "name": "Cd",
+          "basis_set": "DZVP-MOLOPT-SR-GTH",
+          "potential": "GTH-PBE-q12"
+        }
+      ],
+      "scf": {
+        "eps_scf": 1e-09,
+        "max_scf": 200,
+        "added_mos": 10,
+        "smearing": {
+          "method": "FERMI_DIRAC",
+          "temperature_k": 300
+        }
+      },
+      "reference_4x4x4_shifted": {
+        "energy_hartree": -92.13352540267007,
+        "status": "converged"
+      },
+      "expected_ibz": {
+        "4x4x4_shifted": 12,
+        "4x4x4_gamma": 12,
+        "6x6x6_shifted": 36,
+        "6x6x6_gamma": 28
+      },
+      "space_group": 194,
+      "space_group_symbol": "P6_3/mmc",
+      "formula": "Cd",
+      "nsites": 2,
+      "mp_id": "mp-94",
+      "crystal_system": "hexag"
+    },
+    {
+      "label": "ZnO_wurt",
+      "note": "ZnO,      hexag  P6_3mc    #186",
+      "lattice": {
+        "a": 3.23735118,
+        "b": 3.2373508669087494,
+        "c": 5.2220613,
+        "alpha": 90.0,
+        "beta": 90.0,
+        "gamma": 119.99999298106427
+      },
+      "coords": [
+        [
+          "Zn",
+          0.6666669999886804,
+          0.3333330000033636,
+          0.5005917000055131
+        ],
+        [
+          "Zn",
+          0.33333300001131966,
+          0.6666669999966366,
+          0.0005917000055131487
+        ],
+        [
+          "O",
+          0.6666669999886804,
+          0.3333330000033636,
+          0.8797182999939124
+        ],
+        [
+          "O",
+          0.33333300001131966,
+          0.6666669999966366,
+          0.3797182999939124
+        ]
+      ],
+      "kinds": [
+        {
+          "name": "O",
+          "basis_set": "DZVP-MOLOPT-SR-GTH",
+          "potential": "GTH-PBE-q6"
+        },
+        {
+          "name": "Zn",
+          "basis_set": "DZVP-MOLOPT-SR-GTH",
+          "potential": "GTH-PBE-q12"
+        }
+      ],
+      "scf": {
+        "eps_scf": 1e-09,
+        "max_scf": 200,
+        "added_mos": 10
+      },
+      "reference_4x4x4_shifted": {
+        "energy_hartree": -153.189991513715,
+        "status": "converged"
+      },
+      "expected_ibz": {
+        "4x4x4_shifted": 12,
+        "4x4x4_gamma": 12,
+        "6x6x6_shifted": 36,
+        "6x6x6_gamma": 28
+      },
+      "space_group": 186,
+      "space_group_symbol": "P6_3mc",
+      "formula": "ZnO",
+      "nsites": 4,
+      "mp_id": "mp-2133",
+      "crystal_system": "hexag"
+    },
+    {
+      "label": "Bi_rhomb",
+      "note": "Bi,       trig   R-3m      #166",
+      "lattice": {
+        "a": 4.868030391874032,
+        "b": 4.868030115388026,
+        "c": 4.868029026717219,
+        "alpha": 55.563290676944675,
+        "beta": 55.563289415954216,
+        "gamma": 55.56330239090967
+      },
+      "coords": [
+        [
+          "Bi",
+          0.23200202000813402,
+          0.2320020200029092,
+          0.23200202000113768
+        ],
+        [
+          "Bi",
+          0.7679979799918658,
+          0.7679979799970907,
+          0.7679979799988623
+        ]
+      ],
+      "kinds": [
+        {
+          "name": "Bi",
+          "basis_set": "DZVP-MOLOPT-SR-GTH",
+          "potential": "GTH-PBE-q5"
+        }
+      ],
+      "scf": {
+        "eps_scf": 1e-09,
+        "max_scf": 200,
+        "added_mos": 10,
+        "smearing": {
+          "method": "FERMI_DIRAC",
+          "temperature_k": 300
+        }
+      },
+      "reference_4x4x4_shifted": {
+        "energy_hartree": -11.073786342634046,
+        "status": "converged"
+      },
+      "expected_ibz": {
+        "4x4x4_shifted": 10,
+        "4x4x4_gamma": 13,
+        "6x6x6_shifted": 28,
+        "6x6x6_gamma": 32
+      },
+      "space_group": 166,
+      "space_group_symbol": "R-3m",
+      "formula": "Bi",
+      "nsites": 2,
+      "mp_id": "mp-23152",
+      "crystal_system": "trig"
+    },
+    {
+      "label": "BaN2_mono",
+      "note": "BaN2,     monoc  C2/c      #15",
+      "lattice": {
+        "a": 4.22152960817342,
+        "b": 4.22152902829606,
+        "c": 7.313095288211153,
+        "alpha": 77.20459870189772,
+        "beta": 77.20458902048436,
+        "gamma": 63.66145310403109
+      },
+      "coords": [
+        [
+          "Ba",
+          0.7959287999923096,
+          0.2040711999899854,
+          0.25000000000782513
+        ],
+        [
+          "Ba",
+          0.2040712000076904,
+          0.7959288000100145,
+          0.7499999999921746
+        ],
+        [
+          "N",
+          0.15001088001289928,
+          0.4439264199869004,
+          0.4547963799933581
+        ],
+        [
+          "N",
+          0.5560735800157075,
+          0.8499891199910937,
+          0.045203619997479905
+        ],
+        [
+          "N",
+          0.44392641998429255,
+          0.15001088000890614,
+          0.9547963800025199
+        ],
+        [
+          "N",
+          0.8499891199871008,
+          0.5560735800130995,
+          0.5452036200066417
+        ]
+      ],
+      "kinds": [
+        {
+          "name": "Ba",
+          "basis_set": "DZVP-MOLOPT-SR-GTH",
+          "potential": "GTH-PBE-q10"
+        },
+        {
+          "name": "N",
+          "basis_set": "DZVP-MOLOPT-SR-GTH",
+          "potential": "GTH-PBE-q5"
+        }
+      ],
+      "scf": {
+        "eps_scf": 1e-09,
+        "max_scf": 200,
+        "added_mos": 10,
+        "smearing": {
+          "method": "FERMI_DIRAC",
+          "temperature_k": 300
+        }
+      },
+      "reference_4x4x4_shifted": {
+        "energy_hartree": -90.85305282849792,
+        "status": "converged"
+      },
+      "expected_ibz": {
+        "4x4x4_shifted": 20,
+        "4x4x4_gamma": 24,
+        "6x6x6_shifted": 63,
+        "6x6x6_gamma": 68
+      },
+      "space_group": 15,
+      "space_group_symbol": "C2/c",
+      "formula": "BaN2",
+      "nsites": 6,
+      "mp_id": "mp-1001",
+      "crystal_system": "monoc"
+    },
+    {
+      "label": "PI2_tric",
+      "note": "PI2,      tricl  P-1       #2",
+      "lattice": {
+        "a": 4.689967932363589,
+        "b": 7.3328876859060514,
+        "c": 7.49421210914632,
+        "alpha": 80.38030172983918,
+        "beta": 73.91209235237146,
+        "gamma": 80.52437894627349
+      },
+      "coords": [
+        [
+          "P",
+          0.5968323799924432,
+          0.13507035999561215,
+          0.963514759997778
+        ],
+        [
+          "P",
+          0.40316762000755674,
+          0.8649296400043877,
+          0.03648524000222181
+        ],
+        [
+          "I",
+          0.4395245899926575,
+          0.2261026799966007,
+          0.6680442599998996
+        ],
+        [
+          "I",
+          0.5604754100073424,
+          0.7738973200033992,
+          0.3319557400001003
+        ],
+        [
+          "I",
+          0.1924666300105912,
+          0.301220180001128,
+          0.1905966500039494
+        ],
+        [
+          "I",
+          0.8075333699894087,
+          0.6987798199988717,
+          0.8094033499960506
+        ]
+      ],
+      "kinds": [
+        {
+          "name": "I",
+          "basis_set": "DZVP-MOLOPT-SR-GTH",
+          "potential": "GTH-PBE-q7"
+        },
+        {
+          "name": "P",
+          "basis_set": "DZVP-MOLOPT-SR-GTH",
+          "potential": "GTH-PBE-q5"
+        }
+      ],
+      "scf": {
+        "eps_scf": 1e-09,
+        "max_scf": 200,
+        "added_mos": 10
+      },
+      "reference_4x4x4_shifted": {
+        "energy_hartree": -59.05247386658971,
+        "status": "converged"
+      },
+      "expected_ibz": {
+        "4x4x4_shifted": 32,
+        "4x4x4_gamma": 36,
+        "6x6x6_shifted": 108,
+        "6x6x6_gamma": 112
+      },
+      "space_group": 2,
+      "space_group_symbol": "P-1",
+      "formula": "PI2",
+      "nsites": 6,
+      "mp_id": "mp-29443",
+      "crystal_system": "tricl"
+    }
+  ]
+}

@@ -1,0 +1,71 @@
+\begin{table}[htbp]
+\centering\small\setlength{\tabcolsep}{4pt}
+\caption{Same-mesh symmetry-reduction comparisons at $4^3$ (Monkhorst-Pack, $\Gamma$-centred) for the additional structures, relative to the direct full-grid result. Columns report solved k-points and absolute cell-energy, maximum force-component and maximum stress-component differences. All runs use one OpenMP thread. The FFT label records the requested option.}
+\label{tab:symmetry-validation-additional-gamma}
+\begin{tabular}{llrrrr}
+\toprule
+System & Mode & $N_k$ & $|\Delta E|$ ($E_h$) & $\|\Delta F\|_\infty$ ($E_h/a_0$) & $\|\Delta\sigma\|_\infty$ (bar) \\
+\midrule
+Al\_fcc & Full & 64 & $0$ & $0$ & $0$ \\
+Al\_fcc & Time reversal & 36 & $1.1\times10^{-12}$ & $8.1\times10^{-16}$ & $8.3\times10^{-6}$ \\
+Al\_fcc & K290 & 8 & $2.3\times10^{-7}$ & $5.6\times10^{-16}$ & $6.2\times10^{0}$ \\
+Al\_fcc & SPGLIB & 8 & $2.3\times10^{-7}$ & $1.1\times10^{-15}$ & $6.2\times10^{0}$ \\
+Al\_fcc & Full, FFT requested & 64 & $1.2\times10^{-12}$ & $7.0\times10^{-16}$ & $1.3\times10^{0}$ \\
+W\_bcc & Full & 64 & $0$ & $0$ & $0$ \\
+W\_bcc & Time reversal & 36 & $0$ & $1.6\times10^{-14}$ & $1.4\times10^{-5}$ \\
+W\_bcc & K290 & 8 & $3.2\times10^{-7}$ & $8.2\times10^{-15}$ & $2.1\times10^{0}$ \\
+W\_bcc & SPGLIB & 8 & $3.2\times10^{-7}$ & $9.9\times10^{-15}$ & $2.1\times10^{0}$ \\
+W\_bcc & Full, FFT requested & 64 & $9.1\times10^{-13}$ & $9.6\times10^{-15}$ & $4.3\times10^{-3}$ \\
+AlAs\_zb & Full & 64 & $0$ & $0$ & $0$ \\
+AlAs\_zb & Time reversal & 36 & $1.8\times10^{-15}$ & $1.4\times10^{-15}$ & $1.3\times10^{-5}$ \\
+AlAs\_zb & K290 & 8 & $3.2\times10^{-8}$ & $1.7\times10^{-8}$ & $1.2\times10^{-1}$ \\
+AlAs\_zb & SPGLIB & 8 & $3.2\times10^{-8}$ & $1.7\times10^{-8}$ & $1.2\times10^{-1}$ \\
+AlAs\_zb & Full, FFT requested & 64 & $1.4\times10^{-13}$ & $3.2\times10^{-9}$ & $3.4\times10^{-2}$ \\
+CoF2\_rutile & Full & 64 & $0$ & $0$ & $0$ \\
+CoF2\_rutile & Time reversal & 36 & $7.8\times10^{-12}$ & $3.1\times10^{-14}$ & $1.5\times10^{-5}$ \\
+CoF2\_rutile & K290 & 21 & $5.1\times10^{-12}$ & $8.5\times10^{-10}$ & $2.9\times10^{-3}$ \\
+CoF2\_rutile & SPGLIB & 21 & $6.4\times10^{-12}$ & $1.0\times10^{-11}$ & $2.3\times10^{-4}$ \\
+CoF2\_rutile & Full, FFT requested & 64 & $1.7\times10^{-12}$ & $1.8\times10^{-14}$ & $5.0\times10^{-7}$ \\
+BaFe2As2 & Full & 64 & $0$ & $0$ & $0$ \\
+BaFe2As2 & Time reversal & 36 & $1.7\times10^{-11}$ & $3.2\times10^{-14}$ & $1.0\times10^{-5}$ \\
+BaFe2As2 & K290 & 13 & $3.3\times10^{-8}$ & $1.6\times10^{-6}$ & $1.8\times10^{0}$ \\
+BaFe2As2 & SPGLIB & 24 & $3.4\times10^{-9}$ & $3.7\times10^{-9}$ & $6.2\times10^{-2}$ \\
+BaFe2As2 & Full, FFT requested & 64 & $8.4\times10^{-12}$ & $4.9\times10^{-9}$ & $2.3\times10^{-2}$ \\
+BaAg\_pnma & Full & 64 & $0$ & $0$ & $0$ \\
+BaAg\_pnma & Time reversal & 36 & $8.5\times10^{-14}$ & $0$ & $1.0\times10^{-8}$ \\
+BaAg\_pnma & K290 & 27 & $4.6\times10^{-11}$ & $3.1\times10^{-8}$ & $8.3\times10^{-3}$ \\
+BaAg\_pnma & SPGLIB & 27 & $4.6\times10^{-11}$ & $3.0\times10^{-8}$ & $8.3\times10^{-3}$ \\
+BaAg\_pnma & Full, FFT requested & 64 & $2.0\times10^{-11}$ & $1.4\times10^{-8}$ & $5.6\times10^{-2}$ \\
+LiMg\_imma & Full & 64 & $0$ & $0$ & $0$ \\
+LiMg\_imma & Time reversal & 36 & $1.1\times10^{-13}$ & $1.0\times10^{-12}$ & $5.4\times10^{-7}$ \\
+LiMg\_imma & K290 & 24 & $1.1\times10^{-12}$ & $2.6\times10^{-9}$ & $1.3\times10^{-2}$ \\
+LiMg\_imma & SPGLIB & 24 & $1.1\times10^{-12}$ & $2.6\times10^{-9}$ & $1.3\times10^{-2}$ \\
+LiMg\_imma & Full, FFT requested & 64 & $5.7\times10^{-14}$ & $0$ & $4.0\times10^{-8}$ \\
+Cd\_hcp & Full & 64 & $0$ & $0$ & $0$ \\
+Cd\_hcp & Time reversal & 36 & $4.0\times10^{-12}$ & $1.0\times10^{-14}$ & $2.8\times10^{-5}$ \\
+Cd\_hcp & K290 & 12 & $5.6\times10^{-8}$ & $1.0\times10^{-8}$ & $2.6\times10^{-1}$ \\
+Cd\_hcp & SPGLIB & 21 & $1.2\times10^{-7}$ & $4.7\times10^{-9}$ & $2.6\times10^{-1}$ \\
+Cd\_hcp & Full, FFT requested & 64 & $3.3\times10^{-13}$ & $1.1\times10^{-10}$ & $1.2\times10^{-2}$ \\
+ZnO\_wurt & Full & 64 & $0$ & $0$ & $0$ \\
+ZnO\_wurt & Time reversal & 36 & $5.7\times10^{-14}$ & $1.0\times10^{-12}$ & $2.6\times10^{-5}$ \\
+ZnO\_wurt & K290 & 12 & $1.2\times10^{-7}$ & $2.4\times10^{-7}$ & $9.1\times10^{-1}$ \\
+ZnO\_wurt & SPGLIB & 21 & $3.4\times10^{-9}$ & $5.2\times10^{-9}$ & $6.0\times10^{-2}$ \\
+ZnO\_wurt & Full, FFT requested & 64 & $6.3\times10^{-13}$ & $2.9\times10^{-9}$ & $7.5\times10^{-3}$ \\
+Bi\_rhomb & Full & 64 & $0$ & $0$ & $0$ \\
+Bi\_rhomb & Time reversal & 36 & $1.2\times10^{-12}$ & $2.0\times10^{-11}$ & $3.5\times10^{-5}$ \\
+Bi\_rhomb & K290 & 13 & $7.5\times10^{-8}$ & $1.5\times10^{-8}$ & $2.8\times10^{-1}$ \\
+Bi\_rhomb & SPGLIB & 13 & $7.5\times10^{-8}$ & $1.5\times10^{-8}$ & $2.8\times10^{-1}$ \\
+Bi\_rhomb & Full, FFT requested & 64 & $2.2\times10^{-13}$ & $1.5\times10^{-9}$ & $5.2\times10^{-3}$ \\
+BaN2\_mono & Full & 64 & $0$ & $0$ & $0$ \\
+BaN2\_mono & Time reversal & 36 & $1.2\times10^{-12}$ & $1.0\times10^{-10}$ & $4.9\times10^{-5}$ \\
+BaN2\_mono & K290 & 24 & $6.4\times10^{-9}$ & $4.8\times10^{-8}$ & $7.3\times10^{-2}$ \\
+BaN2\_mono & SPGLIB & 24 & $6.4\times10^{-9}$ & $4.8\times10^{-8}$ & $7.3\times10^{-2}$ \\
+BaN2\_mono & Full, FFT requested & 64 & $4.6\times10^{-12}$ & $4.1\times10^{-9}$ & $3.6\times10^{-3}$ \\
+PI2\_tric & Full & 64 & $0$ & $0$ & $0$ \\
+PI2\_tric & Time reversal & 36 & $5.0\times10^{-14}$ & $4.0\times10^{-12}$ & $1.7\times10^{-6}$ \\
+PI2\_tric & K290 & 36 & $5.0\times10^{-14}$ & $4.0\times10^{-12}$ & $1.7\times10^{-6}$ \\
+PI2\_tric & SPGLIB & 36 & $5.0\times10^{-14}$ & $4.0\times10^{-12}$ & $1.7\times10^{-6}$ \\
+PI2\_tric & Full, FFT requested & 64 & $2.8\times10^{-14}$ & $1.8\times10^{-10}$ & $2.2\times10^{-4}$ \\
+\bottomrule
+\end{tabular}
+\end{table}
