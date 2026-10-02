@@ -1,5 +1,5 @@
 {
-  "_comment": "Structures from the pinned regtest_*.inp inputs (Materials Project), expressed as canonical ABC/ALPHA_BETA_GAMMA lattice parameters so CP2K enables full point-group k-point symmetry. Coordinates are fractional (SCALED T). Expected IBZ counts come from expected_ibz_counts.json.",
+  "_comment": "Structures from the pinned regtest_*.inp inputs (Materials Project), expressed as canonical ABC/ALPHA_BETA_GAMMA lattice parameters. The lattice metric has been snapped to the spglib-detected point group (see symmetrize_structures.py) so that symmetry-reduced and FULL_GRID runs integrate the same cell; the as-given parameters are kept under 'lattice_asgiven'. Coordinates are fractional (SCALED T). Expected IBZ counts come from expected_ibz_counts.json.",
   "meshes": [
     {
       "name": "4x4x4-shifted",
@@ -31,12 +31,12 @@
       "label": "Al_fcc",
       "note": "FCC Al,   cubic  Fm-3m     #225",
       "lattice": {
-        "a": 2.8559542459167657,
-        "b": 2.855954291634759,
-        "c": 2.855955,
-        "alpha": 60.0000033779252,
-        "beta": 60.00000284838631,
-        "gamma": 60.000002428463056
+        "a": 2.8559545748,
+        "b": 2.8559545748,
+        "c": 2.8559545748,
+        "alpha": 60.0,
+        "beta": 60.0,
+        "gamma": 60.0
       },
       "coords": [
         [
@@ -77,18 +77,26 @@
       "formula": "Al",
       "nsites": 1,
       "mp_id": "mp-134",
-      "crystal_system": "cubic"
+      "crystal_system": "cubic",
+      "lattice_asgiven": {
+        "a": 2.8559542459167657,
+        "b": 2.855954291634759,
+        "c": 2.855955,
+        "alpha": 60.0000033779252,
+        "beta": 60.00000284838631,
+        "gamma": 60.000002428463056
+      }
     },
     {
       "label": "W_bcc",
       "note": "BCC W,    cubic  Im-3m     #229",
       "lattice": {
-        "a": 2.745573721758673,
-        "b": 2.7455738069778226,
-        "c": 2.74557459,
-        "alpha": 109.47124142241367,
-        "beta": 109.47124187044405,
-        "gamma": 109.47119866543231
+        "a": 2.7455738131,
+        "b": 2.7455738131,
+        "c": 2.7455738131,
+        "alpha": 109.47122063,
+        "beta": 109.47122063,
+        "gamma": 109.47122063
       },
       "coords": [
         [
@@ -129,18 +137,26 @@
       "formula": "W",
       "nsites": 1,
       "mp_id": "mp-91",
-      "crystal_system": "cubic"
+      "crystal_system": "cubic",
+      "lattice_asgiven": {
+        "a": 2.745573721758673,
+        "b": 2.7455738069778226,
+        "c": 2.74557459,
+        "alpha": 109.47124142241367,
+        "beta": 109.47124187044405,
+        "gamma": 109.47119866543231
+      }
     },
     {
       "label": "AlAs_zb",
       "note": "AlAs,     cubic  F-43m     #216",
       "lattice": {
-        "a": 4.013398250535005,
-        "b": 4.013397970922498,
-        "c": 4.01339746,
-        "alpha": 59.9999959688638,
-        "beta": 59.99999827352137,
-        "gamma": 59.9999965443567
+        "a": 4.0133978007,
+        "b": 4.0133978007,
+        "c": 4.0133978007,
+        "alpha": 60.0,
+        "beta": 60.0,
+        "gamma": 60.0
       },
       "coords": [
         [
@@ -188,16 +204,24 @@
       "formula": "AlAs",
       "nsites": 2,
       "mp_id": "mp-2172",
-      "crystal_system": "cubic"
+      "crystal_system": "cubic",
+      "lattice_asgiven": {
+        "a": 4.013398250535005,
+        "b": 4.013397970922498,
+        "c": 4.01339746,
+        "alpha": 59.9999959688638,
+        "beta": 59.99999827352137,
+        "gamma": 59.9999965443567
+      }
     },
     {
       "label": "CoF2_rutile",
       "note": "CoF2,     tetrag P4_2/mnm  #136",
       "lattice": {
         "a": 3.19916469,
-        "b": 4.643519410000112,
-        "c": 4.643519410000112,
-        "alpha": 90.00002517129357,
+        "b": 4.64351941,
+        "c": 4.64351941,
+        "alpha": 90.0,
         "beta": 90.0,
         "gamma": 90.0
       },
@@ -296,18 +320,26 @@
         "4x4x4_gamma": 21,
         "6x6x6_shifted": 36,
         "6x6x6_gamma": 52
+      },
+      "lattice_asgiven": {
+        "a": 3.19916469,
+        "b": 4.643519410000112,
+        "c": 4.643519410000112,
+        "alpha": 90.00002517129357,
+        "beta": 90.0,
+        "gamma": 90.0
       }
     },
     {
       "label": "BaFe2As2",
       "note": "BaFe2As2, tetrag I4/mmm    #139",
       "lattice": {
-        "a": 3.936589743481632,
-        "b": 3.9365900290209326,
-        "c": 6.90980064901686,
-        "alpha": 106.550222990024,
-        "beta": 106.55022227000558,
-        "gamma": 90.00000226232314
+        "a": 3.9365898863,
+        "b": 3.9365898863,
+        "c": 6.90980001,
+        "alpha": 106.55021484,
+        "beta": 106.55021484,
+        "gamma": 90.0
       },
       "coords": [
         [
@@ -403,6 +435,14 @@
         "4x4x4_gamma": 13,
         "6x6x6_shifted": 42,
         "6x6x6_gamma": 30
+      },
+      "lattice_asgiven": {
+        "a": 3.936589743481632,
+        "b": 3.9365900290209326,
+        "c": 6.90980064901686,
+        "alpha": 106.550222990024,
+        "beta": 106.55022227000558,
+        "gamma": 90.00000226232314
       }
     },
     {
@@ -507,18 +547,26 @@
       "formula": "BaAg",
       "nsites": 8,
       "mp_id": "mp-11840",
-      "crystal_system": "ortho"
+      "crystal_system": "ortho",
+      "lattice_asgiven": {
+        "a": 4.99178311,
+        "b": 6.67116559,
+        "c": 8.75728326,
+        "alpha": 90.0,
+        "beta": 90.0,
+        "gamma": 90.0
+      }
     },
     {
       "label": "LiMg_imma",
       "note": "LiMg,     ortho  Imma      #74",
       "lattice": {
-        "a": 5.695202969098945,
-        "b": 5.695202969098945,
-        "c": 4.899455244413899,
-        "alpha": 64.69179991579799,
-        "beta": 64.69179991579799,
-        "gamma": 34.47540184628994
+        "a": 5.6952029691,
+        "b": 5.6952029691,
+        "c": 4.8994552444,
+        "alpha": 64.69179992,
+        "beta": 64.69179992,
+        "gamma": 34.47540185
       },
       "coords": [
         [
@@ -582,18 +630,26 @@
       "formula": "LiMg",
       "nsites": 4,
       "mp_id": "mp-1185380",
-      "crystal_system": "ortho"
+      "crystal_system": "ortho",
+      "lattice_asgiven": {
+        "a": 5.695202969098945,
+        "b": 5.695202969098945,
+        "c": 4.899455244413899,
+        "alpha": 64.69179991579799,
+        "beta": 64.69179991579799,
+        "gamma": 34.47540184628994
+      }
     },
     {
       "label": "Cd_hcp",
       "note": "Cd,       hexag  P6_3/mmc  #194",
       "lattice": {
-        "a": 2.95847441,
-        "b": 2.9584752304814885,
+        "a": 2.9584746378,
+        "b": 2.9584746378,
         "c": 5.88592793,
         "alpha": 90.0,
         "beta": 90.0,
-        "gamma": 120.00001224220426
+        "gamma": 120.0
       },
       "coords": [
         [
@@ -640,18 +696,26 @@
       "formula": "Cd",
       "nsites": 2,
       "mp_id": "mp-94",
-      "crystal_system": "hexag"
+      "crystal_system": "hexag",
+      "lattice_asgiven": {
+        "a": 2.95847441,
+        "b": 2.9584752304814885,
+        "c": 5.88592793,
+        "alpha": 90.0,
+        "beta": 90.0,
+        "gamma": 120.00001224220426
+      }
     },
     {
       "label": "ZnO_wurt",
       "note": "ZnO,      hexag  P6_3mc    #186",
       "lattice": {
-        "a": 3.23735118,
-        "b": 3.2373508669087494,
+        "a": 3.2373511379,
+        "b": 3.2373511379,
         "c": 5.2220613,
         "alpha": 90.0,
         "beta": 90.0,
-        "gamma": 119.99999298106427
+        "gamma": 120.0
       },
       "coords": [
         [
@@ -711,18 +775,26 @@
       "formula": "ZnO",
       "nsites": 4,
       "mp_id": "mp-2133",
-      "crystal_system": "hexag"
+      "crystal_system": "hexag",
+      "lattice_asgiven": {
+        "a": 3.23735118,
+        "b": 3.2373508669087494,
+        "c": 5.2220613,
+        "alpha": 90.0,
+        "beta": 90.0,
+        "gamma": 119.99999298106427
+      }
     },
     {
       "label": "Bi_rhomb",
       "note": "Bi,       trig   R-3m      #166",
       "lattice": {
-        "a": 4.868030391874032,
-        "b": 4.868030115388026,
-        "c": 4.868029026717219,
-        "alpha": 55.563290676944675,
-        "beta": 55.563289415954216,
-        "gamma": 55.56330239090967
+        "a": 4.8680298447,
+        "b": 4.8680298447,
+        "c": 4.8680298447,
+        "alpha": 55.56329416,
+        "beta": 55.56329416,
+        "gamma": 55.56329416
       },
       "coords": [
         [
@@ -769,18 +841,26 @@
       "formula": "Bi",
       "nsites": 2,
       "mp_id": "mp-23152",
-      "crystal_system": "trig"
+      "crystal_system": "trig",
+      "lattice_asgiven": {
+        "a": 4.868030391874032,
+        "b": 4.868030115388026,
+        "c": 4.868029026717219,
+        "alpha": 55.563290676944675,
+        "beta": 55.563289415954216,
+        "gamma": 55.56330239090967
+      }
     },
     {
       "label": "BaN2_mono",
       "note": "BaN2,     monoc  C2/c      #15",
       "lattice": {
-        "a": 4.22152960817342,
-        "b": 4.22152902829606,
-        "c": 7.313095288211153,
-        "alpha": 77.20459870189772,
-        "beta": 77.20458902048436,
-        "gamma": 63.66145310403109
+        "a": 4.2215293182,
+        "b": 4.2215293182,
+        "c": 7.3130952882,
+        "alpha": 77.20459386,
+        "beta": 77.20459386,
+        "gamma": 63.6614531
       },
       "coords": [
         [
@@ -856,18 +936,26 @@
       "formula": "BaN2",
       "nsites": 6,
       "mp_id": "mp-1001",
-      "crystal_system": "monoc"
+      "crystal_system": "monoc",
+      "lattice_asgiven": {
+        "a": 4.22152960817342,
+        "b": 4.22152902829606,
+        "c": 7.313095288211153,
+        "alpha": 77.20459870189772,
+        "beta": 77.20458902048436,
+        "gamma": 63.66145310403109
+      }
     },
     {
       "label": "PI2_tric",
       "note": "PI2,      tricl  P-1       #2",
       "lattice": {
-        "a": 4.689967932363589,
-        "b": 7.3328876859060514,
-        "c": 7.49421210914632,
-        "alpha": 80.38030172983918,
-        "beta": 73.91209235237146,
-        "gamma": 80.52437894627349
+        "a": 4.6899679324,
+        "b": 7.3328876859,
+        "c": 7.4942121091,
+        "alpha": 80.38030173,
+        "beta": 73.91209235,
+        "gamma": 80.52437895
       },
       "coords": [
         [
@@ -939,7 +1027,15 @@
       "formula": "PI2",
       "nsites": 6,
       "mp_id": "mp-29443",
-      "crystal_system": "tricl"
+      "crystal_system": "tricl",
+      "lattice_asgiven": {
+        "a": 4.689967932363589,
+        "b": 7.3328876859060514,
+        "c": 7.49421210914632,
+        "alpha": 80.38030172983918,
+        "beta": 73.91209235237146,
+        "gamma": 80.52437894627349
+      }
     }
   ]
 }

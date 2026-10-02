@@ -7,6 +7,20 @@ frozen on 16 September 2026. `validation/build_metadata.json` records the
 executable SHA-256, compiler flags, thread count, and embedded source revision.
 Per-case metadata identify the executable used for every retained output.
 
+The `validation_additional/` cases (12 Materials-Project structures across four
+Monkhorst-Pack/MacDonald meshes plus a five-mode same-mesh comparison on the
+shifted and Gamma-centred $4^3$ grids) were run with a separate local build at
+CP2K revision `305e089a6f` (with CUDA and libxc), so their absolute reference
+energies are recorded but not hard-checked against the published Si/Al values.
+`validation_additional/structures.json` stores both the as-given Materials-Project
+metric (`lattice_asgiven`) and the metric snapped to the spglib-detected point
+group; the latter is what the generated inputs and all reported counts use, so
+that symmetry-reduced and full-grid runs integrate the same cell.
+`validation_additional/results_additional.json` and
+`symmetry_modes_results{,_gamma}.json` hold the parsed per-case results. The
+`additional_tables.*` and `symmetry_modes_tables*.tex` files are the table
+sources; their `.out` logs are deliberately not retained.
+
 `validation/source_history.json` is a title-filtered inventory of relevant
 and adjacent mainline changes through that freeze. It is a source-history
 record, not evidence that every listed feature was rerun for this article.
