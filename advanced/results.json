@@ -1,0 +1,58 @@
+[
+  {
+    "converged": true,
+    "aborted": false,
+    "abort_message": null,
+    "program_ended": true,
+    "energy_hartree": -2.069544518923156,
+    "nkpoints": 64.0,
+    "returncode": 0,
+    "wall_seconds": 24.3,
+    "case": "wannier_nosym",
+    "system": "al",
+    "method": "wannier",
+    "symmetry": false
+  },
+  {
+    "converged": true,
+    "aborted": false,
+    "abort_message": null,
+    "program_ended": true,
+    "energy_hartree": -2.069544518923157,
+    "nkpoints": 32.0,
+    "returncode": 0,
+    "wall_seconds": 24.5,
+    "case": "wannier_sym",
+    "system": "al",
+    "method": "wannier",
+    "symmetry": true
+  },
+  {
+    "converged": true,
+    "aborted": false,
+    "abort_message": null,
+    "program_ended": true,
+    "energy_hartree": -8.418137026312941,
+    "nkpoints": 64.0,
+    "returncode": 0,
+    "wall_seconds": 25.0,
+    "case": "wannier_nosym",
+    "system": "alas",
+    "method": "wannier",
+    "symmetry": false
+  },
+  {
+    "converged": true,
+    "aborted": false,
+    "abort_message": null,
+    "program_ended": true,
+    "energy_hartree": -8.418137026312927,
+    "nkpoints": 32.0,
+    "returncode": 0,
+    "wall_seconds": 25.4,
+    "case": "wannier_sym",
+    "system": "alas",
+    "method": "wannier",
+    "symmetry": true
+  }
+]
