@@ -19,7 +19,9 @@ that symmetry-reduced and full-grid runs integrate the same cell.
 `validation_additional/results_additional.json` and
 `symmetry_modes_results{,_gamma}.json` hold the parsed per-case results. The
 `additional_tables.*` and `symmetry_modes_tables*.tex` files are the table
-sources; their `.out` logs are deliberately not retained.
+sources. The 168 raw CP2K `.out` logs are retained compressed as
+`validation_additional/outs.tar.xz` (xz, ~1.2% of the uncompressed size);
+extract with `tar -xf outs.tar.xz` to restore the original per-case paths.
 
 `validation/source_history.json` is a title-filtered inventory of relevant
 and adjacent mainline changes through that freeze. It is a source-history
